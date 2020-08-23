@@ -1,0 +1,19 @@
+{
+  "name": "au-recorder-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/main.js -t scssify | uglifyjs -cm -o bundle.js",
+    "watch": "watchify js/main.js -t scssify -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "latest",
+    "scssify": "latest",
+    "uglify-js": "latest",
+    "watchify": "latest"
+  },
+  "dependencies": {}
+}
